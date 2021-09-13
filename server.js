@@ -5,10 +5,10 @@ const path = require('path');
 const dotEnv = require("dotenv");
 
 /* ----------------------- Enviournment configuration ----------------------- */
-dotEnv.config({ path: path.join(__dirname + "/express-essentials/API/configuration.env") })
+dotEnv.config({ path: path.join(__dirname + "/configuration.env") })
 
 /* ------------------------ Set data base connection ------------------------ */
-require(path.join(__dirname + "/express-essentials/API/DB-Connection.js"));
+require(path.join(__dirname + "/express-essentials/DB/DB-Connection.js"));
 
 /* ------------------------------- Declare app ------------------------------ */
 const app = express();
@@ -19,8 +19,8 @@ app.use(express.json())
 app.use(cookieparser());
 
 /* -------------------------------- API URLs -------------------------------- */
-app.use(path.join(__dirname + "/express-essentials/API/authentication.js"));
-app.use(path.join(__dirname + "/express-essentials/API/common.js"));
+app.use(require(path.join(__dirname + "/express-essentials/API/authentication.js")));
+app.use(require(path.join(__dirname + "/express-essentials/API/common.js")));
 
 /* ------------------------------- Production ------------------------------- */
 const PORT = process.env.PORT || 5000;

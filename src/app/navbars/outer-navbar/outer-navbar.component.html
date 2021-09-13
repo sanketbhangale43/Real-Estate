@@ -1,11 +1,22 @@
 <p>
-    <mat-toolbar color="primary">
+    <mat-toolbar>
         <span>Real Estate</span>
         <span class="example-spacer"></span>
-        <button mat-button>Home</button>
-        <button mat-button>Contact</button>
-        <button mat-button>About us</button>
-        <button mat-button>Add property</button>
-        <button mat-flat-button color="primary">Login</button>
+
+        <!-- Home -->
+        <button mat-button><a class="_custom_link_txt_black" [routerLink]="['/']">Home</a></button>
+
+        <!-- Contact -->
+        <button mat-button><a class="_custom_link_txt_black" [routerLink]="['/contact']">Contact</a></button>
+
+        <!-- About -->
+        <button mat-button><a class="_custom_link_txt_black" [routerLink]="['/about']">About</a></button>
+
+        <!-- Add Property -->
+        <button mat-button>Add Property</button>
+
+        <!-- Signup -->
+        <button mat-flat-button color="primary"><a class="_custom_link_txt"
+                [routerLink]="['/signup']">Signup</a></button>
     </mat-toolbar>
 </p>

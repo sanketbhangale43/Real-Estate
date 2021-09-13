@@ -1,8 +1,8 @@
-const express = require('express')
+const express = require('express');
 const router = express.Router();
-require('../DB/DB-Connection/js');
-const User = require('../DB/Models/User.js')
-const bcrypt = require('bcryptjs')
+require('../DB/DB-Connection');
+const User = require('../DB/Models/User');
+const bcrypt = require('bcryptjs');
 
 /* -------------------------------------------------------------------------- */
 /*                                  API URLS                                  */

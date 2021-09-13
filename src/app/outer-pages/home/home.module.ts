@@ -17,9 +17,9 @@ import { RootComponent } from './root/root.component';
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule,
     MaterialModule,
-    NavbarsModule
+    NavbarsModule,
+    HomeRoutingModule
   ]
 })
 export class HomeModule { }

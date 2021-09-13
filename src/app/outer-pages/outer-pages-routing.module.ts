@@ -7,6 +7,18 @@ const routes: Routes = [
     data: { preload: true },
     pathMatch: 'full',
     loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
+  },
+  {
+    path: 'contact',
+    data: { preload: true },
+    pathMatch: 'full',
+    loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)
+  },
+  {
+    path: 'about',
+    data: { preload: true },
+    pathMatch: 'full',
+    loadChildren: () => import('./about/about.module').then(m => m.AboutModule)
   }
 ];
 
