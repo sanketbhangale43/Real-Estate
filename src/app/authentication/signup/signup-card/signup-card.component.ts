@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SignupService } from './../signup.service';
 
 @Component({
   selector: 'app-signup-card',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./signup-card.component.css']
 })
 export class SignupCardComponent implements OnInit {
+  hide = true;
 
-  constructor() { }
+  constructor(
+    public service: SignupService
+  ) { }
 
   ngOnInit(): void {
   }

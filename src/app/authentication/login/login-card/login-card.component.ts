@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoginService } from '../login.service';
 
 @Component({
   selector: 'app-login-card',
@@ -6,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login-card.component.css']
 })
 export class LoginCardComponent implements OnInit {
-
-  constructor() { }
+  hide = true;
+  constructor(
+    public service: LoginService
+  ) { }
 
   ngOnInit(): void {
   }

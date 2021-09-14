@@ -7,7 +7,7 @@ if (debug) {
     domain = "";
 }
 
-export const endpoints = {
+export const ApiUrls = {
     SignupApi: `${domain}/api/signup`,
     LoginApi: `${domain}/api/login`
 };

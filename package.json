@@ -4,6 +4,7 @@
   "engines": {
     "node": "12.18.0"
   },
+  "proxy": "http://localhost:5000/",
   "scripts": {
     "ng": "ng",
     "start": "node server.js",

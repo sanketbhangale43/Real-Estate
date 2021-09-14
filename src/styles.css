@@ -3,20 +3,45 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-._custom_link_txt{
+.__custom_link_txt{
     color: #FFFFFF;
 }
 
-._custom_link_txt:hover{
+.__custom_link_txt:hover{
     color: #FFFFFF;
     text-decoration: none;
 }
 
-._custom_link_txt_black{
+.__custom_link_txt_black{
     color: #212121;
 }
 
-._custom_link_txt_black:hover{
+.__custom_link_txt_black:hover{
     color: #212121;
     text-decoration: none;
 }
+
+.__center{
+    height: 91vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+._f4{
+  font-size: large;
+}
+
+._f5{
+  font-size: larger;
+}
+
+._f6{
+  font-size: 2rem;
+}
+
+._br2{
+  border-radius: 10px;
+}
+
+
