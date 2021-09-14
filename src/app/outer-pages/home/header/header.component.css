@@ -1,0 +1,12 @@
+.__pos_relative {
+    position: relative;
+  } 
+  
+.__pos_absoloute {
+    position: absolute;
+    z-index: 2;
+}
+
+.__ht_20_per{
+    height: 20%;
+}
